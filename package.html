@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tour Packages | Your Travel Agency</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#f4f7fb;
+  color:#333;
+}
+
+/* HERO */
+.hero{
+  height:60vh;
+  background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+.hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.5);
+}
+
+.hero-content{
+  position:relative;
+  text-align:center;
+  color:#fff;
+}
+
+.hero-content h1{
+  font-size:3rem;
+}
+
+.hero-content p{
+  margin-top:10px;
+  font-size:1.1rem;
+}
+
+/* SECTION */
+section{
+  padding:60px 10%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.section-title h2{
+  font-size:2.6rem;
+  color:#0b7285;
+}
+
+.section-title p{
+  max-width:700px;
+  margin:10px auto;
+  color:#555;
+}
+
+/* PACKAGES GRID */
+.packages{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+  gap:30px;
+}
+
+.package-card{
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 15px 30px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.package-card:hover{
+  transform:translateY(-10px);
+}
+
+.package-card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.package-content{
+  padding:20px;
+}
+
+.package-content h3{
+  color:#0b7285;
+  margin-bottom:10px;
+}
+
+.package-content ul{
+  list-style:none;
+  font-size:0.95rem;
+  color:#555;
+}
+
+.package-content ul li{
+  margin-bottom:8px;
+}
+
+.price{
+  margin:15px 0;
+  font-size:1.2rem;
+  font-weight:600;
+  color:#000;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 22px;
+  background:#0b7285;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+  font-size:0.9rem;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#095c6b;
+}
+
+/* FOOTER */
+footer{
+  background:#0b7285;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-content h1{
+    font-size:2.4rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>Our Tour Packages</h1>
+    <p>Handpicked experiences for honeymoon, family & adventure lovers</p>
+  </div>
+</div>
+
+<!-- PACKAGES SECTION -->
+<section>
+  <div class="section-title">
+    <h2>Featured Tour Packages</h2>
+    <p>Explore our exclusive travel packages curated for unforgettable memories.</p>
+  </div>
+
+  <div class="packages">
+
+    <!-- PACKAGE 1 -->
+    <div class="package-card">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Honeymoon Bali">
+      <div class="package-content">
+        <h3>Bali Honeymoon Special</h3>
+        <ul>
+          <li>✔ 4 Nights / 5 Days</li>
+          <li>✔ Beachside Resort Stay</li>
+          <li>✔ Romantic Dinner & Sunset Cruise</li>
+          <li>✔ Water Activities</li>
+        </ul>
+        <div class="price">₹49,999 / couple</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- PACKAGE 2 -->
+    <div class="package-card">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Dubai Adventure">
+      <div class="package-content">
+        <h3>Dubai Adventure</h3>
+        <ul>
+          <li>✔ 5 Nights / 6 Days</li>
+          <li>✔ Desert Safari & Dune Bashing</li>
+          <li>✔ Marina Cruise</li>
+          <li>✔ Burj Khalifa Tour</li>
+        </ul>
+        <div class="price">₹59,999 / person</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- PACKAGE 3 -->
+    <div class="package-card">
+      <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff" alt="Maldives Luxury">
+      <div class="package-content">
+        <h3>Maldives Luxury Escape</h3>
+        <ul>
+          <li>✔ 6 Nights / 7 Days</li>
+          <li>✔ Overwater Villa Stay</li>
+          <li>✔ Snorkeling & Private Dinner</li>
+          <li>✔ Island Hopping</li>
+        </ul>
+        <div class="price">₹79,999 / couple</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- PACKAGE 4 -->
+    <div class="package-card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Singapore Family">
+      <div class="package-content">
+        <h3>Singapore Family Trip</h3>
+        <ul>
+          <li>✔ 5 Nights / 6 Days</li>
+          <li>✔ Universal Studios Entry</li>
+          <li>✔ City Sightseeing</li>
+          <li>✔ Marina Bay Sands Stay</li>
+        </ul>
+        <div class="price">₹64,999 / person</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Your Travel Agency | All Rights Reserved
+</footer>
+
+</body>
+</html>

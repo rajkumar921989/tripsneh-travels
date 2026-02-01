@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bank Details | Swan Tours</title>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#f4f7fb;
+  color:#333;
+}
+
+/* HERO */
+.hero{
+  height:60vh;
+  background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+.hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.5);
+}
+
+.hero-content{
+  position:relative;
+  text-align:center;
+  color:#fff;
+}
+
+.hero-content h1{
+  font-size:3rem;
+}
+
+.hero-content p{
+  margin-top:10px;
+  font-size:1.1rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    padding: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background: #f2f2f2;
+    color: red;
+}
+
+td {
+    color: #333;
+}
+
+tfoot td {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    border-top: 2px solid #000;
+}
+
+@media(max-width:800px){
+    table, th, td {
+        font-size: 14px;
+    }
+}
+</style>
+</head>
+<body>
+
+<h2>Bank Details For Cheque, Cash, NEFT/RTGS</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Bank</th>
+            <th>Branch</th>
+            <th>Account Name</th>
+            <th>Current A/C No</th>
+            <th>RTGS / NEFT IFSC Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>HDFC Bank Ltd</td>
+            <td>M Block Connaught Place, New Delhi</td>
+            <td>M/S Swan Tours</td>
+            <td>122-020-2000-6189</td>
+            <td>HDFC0001220</td>
+        </tr>
+        <tr>
+            <td>Oriental Bank Of Commerce</td>
+            <td>M Block Connaught Place, New Delhi</td>
+            <td>M/S Swan Tours</td>
+            <td>1048-11000-48280</td>
+            <td>ORBC0101048</td>
+        </tr>
+        <tr>
+            <td>Punjab National Bank</td>
+            <td>L Block Connaught Place, New Delhi</td>
+            <td>M/S Swan Tours</td>
+            <td>309-200-2100-213-577</td>
+            <td>PUNB0309200</td>
+        </tr>
+        <tr>
+            <td>YES Bank</td>
+            <td>Janpath Connaught Place, New Delhi</td>
+            <td>M/S Swan Tours</td>
+            <td>0136-839-0000-2491</td>
+            <td>YESB0000136</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="5">Cheque / Payment Transfer in favor of "Swan Tours"</td>
+        </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>

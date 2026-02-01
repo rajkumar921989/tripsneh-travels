@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Thailand Tour Packages | Luxury Thailand Holidays</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f5f7fa;color:#333}
+
+/* HERO */
+.hero{
+  height:90vh;
+  background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.7)),
+  url('thailand.jpg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+}
+.hero h1{font-size:3.5rem;font-weight:700}
+.hero p{max-width:750px;margin:20px auto;font-size:1.1rem}
+
+.btn{
+  padding:14px 32px;
+  background:#cfae70;
+  color:#fff;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:500;
+  transition:.3s;
+}
+.btn:hover{background:#b9975b}
+
+/* SECTION */
+.section{padding:80px 10%}
+.section h2{text-align:center;font-size:2.6rem;margin-bottom:15px}
+.section p{text-align:center;max-width:850px;margin:0 auto 50px;color:#666}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+.box{
+  background:#fff;
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+  text-align:center;
+}
+
+/* CARDS */
+.card{
+  background:#fff;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 20px 45px rgba(0,0,0,.1);
+  transition:.3s;
+}
+.card:hover{transform:translateY(-10px)}
+.card img{width:100%;height:220px;object-fit:cover}
+.card-body{padding:25px}
+.price{color:#cfae70;font-size:1.2rem;font-weight:600;margin:10px 0}
+
+/* ITINERARY */
+.timeline{max-width:900px;margin:0 auto}
+.day{
+  background:#fff;
+  padding:25px;
+  margin-bottom:20px;
+  border-left:6px solid #cfae70;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* CTA */
+.cta{
+  background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+  url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1');
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  text-align:center;
+  padding:90px 10%;
+}
+
+footer{
+  background:#111;
+  color:#aaa;
+  text-align:center;
+  padding:25px;
+}
+
+@media(max-width:768px){
+  .hero h1{font-size:2.4rem}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Thailand</h1>
+    <p>Golden temples, tropical islands, street food heaven & luxury beach resorts — Thailand hits different.</p>
+    <a href="#packages" class="btn">Explore Packages</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <h2>About Thailand</h2>
+  <p>
+    Thailand is one of Asia’s most loved destinations, offering a perfect mix of beaches,
+    nightlife, culture, temples, and luxury experiences. From Phuket’s islands to Bangkok’s
+    city buzz — Thailand is fun, romantic, and unforgettable.
+  </p>
+
+  <div class="grid">
+    <div class="box">
+      <h3>🏝️ Tropical Islands</h3>
+      <p>Phuket, Krabi, Phi Phi & crystal-clear waters.</p>
+    </div>
+    <div class="box">
+      <h3>🛕 Culture & Temples</h3>
+      <p>Ancient temples, royal palaces & Thai heritage.</p>
+    </div>
+    <div class="box">
+      <h3>🎉 Nightlife & Food</h3>
+      <p>Street food, beach clubs & iconic nightlife.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="section" id="packages">
+  <h2>Thailand Tour Packages</h2>
+  <p>Handcrafted packages for every travel style.</p>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="haney.jpg">
+      <div class="card-body">
+        <h3>💍 Honeymoon Package</h3>
+        <p>6N/7D | Phuket + Krabi | Island Tours | Romantic Dinners</p>
+        <div class="price">₹70,000 / couple</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="nell.jpg">
+      <div class="card-body">
+        <h3>👨‍👩‍👧 Family Package</h3>
+        <p>5N/6D | Bangkok + Pattaya | Coral Island | Safari World</p>
+        <div class="price">₹50,000 / person</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86">
+      <div class="card-body">
+        <h3>👑 Luxury Package</h3>
+        <p>7N/8D | 5★ Resorts | Private Speedboat | Spa</p>
+        <div class="price">₹1,20,000 / person</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ITINERARY -->
+<section class="section">
+  <h2>Thailand Day-Wise Itinerary</h2>
+
+  <div class="timeline">
+    <div class="day"><strong>Day 1:</strong> Arrival in Phuket • Hotel Check-in • Leisure Evening</div>
+    <div class="day"><strong>Day 2:</strong> Phi Phi Island Tour • Snorkeling • Beach Time</div>
+    <div class="day"><strong>Day 3:</strong> Transfer to Krabi • 4 Island Tour</div>
+    <div class="day"><strong>Day 4:</strong> Fly to Bangkok • Evening Shopping</div>
+    <div class="day"><strong>Day 5:</strong> Bangkok City Tour • Temples • Mall Visit</div>
+    <div class="day"><strong>Day 6:</strong> Pattaya • Coral Island Tour</div>
+    <div class="day"><strong>Day 7:</strong> Departure</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Ready for Thailand Vibes?</h2>
+  <p>Luxury resorts • Island hopping • Custom itineraries</p><br>
+  <a href="#" class="btn">Contact Us</a>
+</section>
+
+<footer>
+  © 2026 Tripsneh Travels | Luxury Thailand Holidays
+</footer>
+
+</body>
+</html>

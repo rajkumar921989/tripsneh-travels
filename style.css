@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Top Header */
+.top-header {
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo {
+  height: 100px;
+  width: 130px;
+}
+
+.center {
+  font-size: 16px;
+}
+
+.right a {
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.right a i {
+  color: #ffffff;
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.right a i:hover {
+  color: #ddd;      /* slightly gray on hover */
+  transform: scale(1.15);
+}
+
+
+
+/* Slider */
+.slider {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: visible; 
+
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 15px 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0a3d62;
+}
+
+.logo i {
+  margin-right: 8px;
+  color: #ff6b01;
+}
+
+/* Menu Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ff6b01;
+}
+
+/* Button */
+.nav-btn a {
+  background: #ff6b01;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.card{
+  overflow: visible;
+}
+
+
+
+.nav-btn a:hover {
+  background: #e65c00;
+}
+
+/* Slider Fix */
+.slider {
+  margin-top: 0;
+}
+
+
+/* Parent menu */
+.menu > li {
+  position: relative;
+}
+
+/* Parent */
+.dropdown{
+  position: relative;
+}
+
+/* Submenu box */
+.submenu{
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background: #fff;   /* 🔥 IMPORTANT */
+  min-width: 220px;
+
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border-radius: 6px;
+
+  display: none;
+  z-index: 999;
+}
+
+/* Show on hover */
+.dropdown:hover .submenu{
+  display: block;
+}
+
+/* Submenu items */
+.submenu li a{
+  display: block;
+  padding: 10px 18px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Hover effect */
+.submenu li a:hover{
+  background: #f5f5f5;
+  color: #ff7a00;
+}
+
+/* Show submenu */
+.dropdown:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+/* Enquiry Button */
+.enquiry-btn-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.enquiry-btn-container button {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;   /* 🔥 FULL ROUND */
+  font-weight: 600;
+}
+
+
+/* Enquiry Form Popup */
+.enquiry-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+
+  display: none;              /* ✅ HIDDEN BY DEFAULT */
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+}
+
+
+.form-box {
+  background: #fff;
+  padding: 25px;
+  width: 320px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.form-box button {
+  width: 100%;
+  background: #ff6600;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 22px;
+  cursor: pointer;
+}

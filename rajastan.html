@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rajasthan Royal Tours | Udaipur Jodhpur Jaisalmer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+body{
+  background:#f5f6fa;
+  color:#333;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  background:
+  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+  url("https://images.unsplash.com/photo-1548013146-72479768bada") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+}
+.hero h1{
+  font-size:58px;
+  letter-spacing:3px;
+}
+.hero p{
+  margin:20px 0;
+  font-size:18px;
+  opacity:.9;
+}
+.hero a{
+  padding:14px 40px;
+  background:#cfa144;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s;
+}
+.hero a:hover{
+  background:#b8922f;
+  transform:translateY(-3px);
+}
+
+/* SECTION */
+.section{
+  max-width:1200px;
+  margin:auto;
+  padding:80px 20px;
+}
+.section h2{
+  text-align:center;
+  font-size:40px;
+  color:#7d3c0c;
+}
+.section .subtitle{
+  text-align:center;
+  color:#666;
+  margin:15px 0 60px;
+}
+
+/* CITY CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+.city{
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 15px 35px rgba(0,0,0,.1);
+  transition:.4s;
+}
+.city:hover{
+  transform:translateY(-12px);
+}
+.city img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+.city-content{
+  padding:30px;
+}
+.city-content h3{
+  color:#7d3c0c;
+  margin-bottom:10px;
+}
+.city-content p{
+  font-size:15px;
+  color:#555;
+}
+
+/* PACKAGES */
+.packages{
+  background:linear-gradient(to right,#fffaf0,#ffffff);
+}
+.package-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+.package{
+  background:#fff;
+  padding:35px;
+  border-radius:18px;
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
+  text-align:center;
+  position:relative;
+}
+.package h4{
+  font-size:20px;
+  color:#7d3c0c;
+}
+.price{
+  font-size:26px;
+  color:#cfa144;
+  margin:10px 0 20px;
+}
+.package ul{
+  list-style:none;
+  margin-bottom:25px;
+}
+.package ul li{
+  margin:8px 0;
+  font-size:14px;
+  color:#555;
+}
+.package a{
+  display:inline-block;
+  padding:12px 32px;
+  background:#cfa144;
+  color:#fff;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:600;
+}
+.package a:hover{
+  background:#b8922f;
+}
+
+/* POPULAR */
+.popular{
+  border:2px solid #cfa144;
+  transform:scale(1.05);
+}
+.badge{
+  position:absolute;
+  top:-12px;
+  right:-12px;
+  background:#cfa144;
+  color:#fff;
+  padding:6px 16px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:600;
+}
+
+/* CTA */
+.cta{
+  background:#7d3c0c;
+  color:#fff;
+  text-align:center;
+  padding:80px 20px;
+}
+.cta h2{
+  font-size:42px;
+}
+.cta p{
+  margin:15px 0 25px;
+}
+.cta a{
+  padding:15px 45px;
+  background:#cfa144;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* FOOTER */
+footer{
+  background:#3e1f0b;
+  color:#ccc;
+  text-align:center;
+  padding:20px;
+  font-size:14px;
+}
+
+@media(max-width:768px){
+  .hero h1{font-size:40px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>ROYAL RAJASTHAN</h1>
+    <p>Udaipur • Jodhpur • Jaisalmer — Travel Like Royalty</p>
+    <a href="#">Plan Your Royal Trip</a>
+  </div>
+</section>
+
+<!-- CITIES -->
+<section class="section">
+  <h2>Royal Destinations</h2>
+  <p class="subtitle">Three cities. One legendary experience.</p>
+
+  <div class="grid">
+    <div class="city">
+      <img src="udaipur1.jpg">
+      <div class="city-content">
+        <h3>Udaipur – City of Lakes</h3>
+        <p>Palaces, lakes, and pure romance. Luxury stays and sunset vibes.</p>
+      </div>
+    </div>
+
+    <div class="city">
+      <img src="jodpur.jpg">
+      <div class="city-content">
+        <h3>Jodhpur – Blue City</h3>
+        <p>Massive forts, blue streets, and fearless Rajput energy.</p>
+      </div>
+    </div>
+
+    <div class="city">
+      <img src="jaisalmear.jpg">
+      <div class="city-content">
+        <h3>Jaisalmer – Golden City</h3>
+        <p>Desert safaris, sand dunes, and golden fort magic.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="section packages">
+  <h2>Rajasthan Tour Packages</h2>
+  <p class="subtitle">Handpicked. Royal. No compromises.</p>
+
+  <div class="package-grid">
+
+    <div class="package">
+      <h4>4 Days / 3 Nights</h4>
+      <div class="price">₹15,999</div>
+      <ul>
+        <li>✔ Udaipur Sightseeing</li>
+        <li>✔ City Palace & Lake Pichola</li>
+        <li>✔ Heritage Hotel</li>
+      </ul>
+      <a href="#">Book Now</a>
+    </div>
+
+    <div class="package popular">
+      <span class="badge">Most Popular</span>
+      <h4>6 Days / 5 Nights</h4>
+      <div class="price">₹24,999</div>
+      <ul>
+        <li>✔ Udaipur + Jodhpur</li>
+        <li>✔ Mehrangarh Fort</li>
+        <li>✔ Luxury Stay</li>
+      </ul>
+      <a href="#">Book Now</a>
+    </div>
+
+    <div class="package">
+      <h4>8 Days / 7 Nights</h4>
+      <div class="price">₹34,999</div>
+      <ul>
+        <li>✔ Udaipur + Jodhpur + Jaisalmer</li>
+        <li>✔ Desert Safari & Camp</li>
+        <li>✔ Royal Experience</li>
+      </ul>
+      <a href="#">Book Now</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Ready to Travel Like Royalty?</h2>
+  <p>We don’t sell packages. We sell legacy experiences.</p>
+  <a href="#">Talk to Travel Expert</a>
+</section>
+
+<footer>
+© 2026 Tripsneh Travels | Royal Rajasthan Specialists
+</footer>
+
+</body>
+</html>

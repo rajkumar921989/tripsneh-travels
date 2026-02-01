@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Andaman & Nicobar Islands | Tripsneh Travels</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* Hero */
+.hero{
+    height:70vh;
+    background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:12px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:720px;
+    margin:auto;
+}
+
+/* Section */
+.section{
+    padding:60px 10%;
+}
+
+.section h2{
+    font-size:32px;
+    margin-bottom:20px;
+    color:#0f4c75;
+}
+
+.section p{
+    line-height:1.8;
+    font-size:16px;
+}
+
+/* Island Section */
+.islands{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.island-card{
+    background:#fff;
+    border-radius:14px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+
+.island-card img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
+}
+
+.island-content{
+    padding:22px;
+}
+
+.island-content h3{
+    color:#0f4c75;
+    margin-bottom:10px;
+}
+
+/* Packages */
+.packages{
+    background:#eaf4ff;
+}
+
+.package-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.package-card{
+    background:#fff;
+    border-radius:14px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.12);
+    overflow:hidden;
+    transition:transform 0.3s;
+}
+
+.package-card:hover{
+    transform:translateY(-8px);
+}
+
+.package-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.package-content{
+    padding:20px;
+}
+
+.package-content h3{
+    color:#0f4c75;
+    margin-bottom:10px;
+}
+
+.package-content ul{
+    padding-left:18px;
+    margin-bottom:15px;
+}
+
+.package-content ul li{
+    font-size:14px;
+    margin-bottom:6px;
+}
+
+.price{
+    font-size:18px;
+    font-weight:bold;
+    color:#16a34a;
+}
+
+.book-btn{
+    display:inline-block;
+    margin-top:14px;
+    padding:10px 18px;
+    background:#0f4c75;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:14px;
+}
+
+/* Footer */
+.footer{
+    background:#0f4c75;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Hero -->
+<div class="hero">
+    <div>
+        <h1>Andaman & Nicobar Islands</h1>
+        <p>Discover turquoise waters, white-sand beaches, coral reefs, and island vibes that feel unreal.</p>
+    </div>
+</div>
+
+<!-- About -->
+<div class="section">
+    <h2>About Andaman & Nicobar Islands</h2>
+    <p>
+        The Andaman & Nicobar Islands are a tropical paradise located in the Bay of Bengal, known for their
+        crystal-clear waters, scenic beaches, and rich marine life. From peaceful sunsets to thrilling
+        water adventures, Andaman offers the perfect mix of relaxation and excitement.
+        Whether you’re planning a honeymoon, a family vacation, or an adventure trip,
+        Andaman promises memories that last forever.
+    </p>
+</div>
+
+<!-- Island Wise -->
+<div class="section">
+    <h2>Explore the Islands</h2>
+
+    <div class="islands">
+
+        <div class="island-card">
+            <img src="andman.jpg">
+            <div class="island-content">
+                <h3>Havelock Island</h3>
+                <p>
+                    Famous for Radhanagar Beach, scuba diving, and stunning sunsets.
+                    A must-visit for honeymooners and beach lovers.
+                </p>
+            </div>
+        </div>
+
+        <div class="island-card">
+            <img src="nell.jpg">
+            <div class="island-content">
+                <h3>Neil Island</h3>
+                <p>
+                    Peaceful and scenic with natural bridges and coral beaches.
+                    Perfect for travelers who love slow, calm island life.
+                </p>
+            </div>
+        </div>
+
+        <div class="island-card">
+            <img src="port.jpg">
+            <div class="island-content">
+                <h3>Port Blair</h3>
+                <p>
+                    The capital city known for Cellular Jail, museums, and ferry points.
+                    A blend of history and modern island culture.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Packages -->
+<div class="section packages">
+    <h2>Andaman Tour Packages</h2>
+
+    <div class="package-grid">
+
+        <div class="package-card">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4">
+            <div class="package-content">
+                <h3>Honeymoon Package</h3>
+                <ul>
+                    <li>5 Nights / 6 Days</li>
+                    <li>Private Beach Candle Dinner</li>
+                    <li>Havelock + Neil Island</li>
+                </ul>
+                <div class="price">₹29,999 / Couple</div>
+                <a href="#" class="book-btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5">
+            <div class="package-content">
+                <h3>Adventure Package</h3>
+                <ul>
+                    <li>Scuba Diving & Snorkeling</li>
+                    <li>Sea Walk Experience</li>
+                    <li>Island Hopping</li>
+                </ul>
+                <div class="price">₹24,999 / Person</div>
+                <a href="#" class="book-btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+            <div class="package-content">
+                <h3>Family Package</h3>
+                <ul>
+                    <li>6 Nights / 7 Days</li>
+                    <li>Comfort Hotels</li>
+                    <li>Sightseeing + Ferry Transfers</li>
+                </ul>
+                <div class="price">₹22,999 / Person</div>
+                <a href="#" class="book-btn">Book Now</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>© 2026 Tripsneh Travels | Island Dreams Made Easy</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Singapore | Luxury City Escape</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#f5f7fb;
+  color:#333;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  background:url("https://images.unsplash.com/photo-1508964942454-1a56651d54ac") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+.hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+  position:relative;
+  color:#fff;
+  text-align:center;
+  max-width:750px;
+}
+
+.hero-content h1{
+  font-size:3.6rem;
+}
+
+.hero-content p{
+  font-size:1.2rem;
+  margin-top:15px;
+}
+
+/* SECTION */
+section{
+  padding:70px 10%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.section-title h2{
+  font-size:2.6rem;
+  color:#1c7ed6;
+}
+
+.section-title p{
+  max-width:700px;
+  margin:10px auto;
+  color:#555;
+}
+
+/* ABOUT */
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.about img{
+  width:100%;
+  border-radius:18px;
+}
+
+.about p{
+  line-height:1.8;
+  color:#555;
+}
+
+/* PACKAGES */
+.packages{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.package{
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 20px 35px rgba(0,0,0,0.12);
+  transition:0.3s;
+}
+
+.package:hover{
+  transform:translateY(-12px);
+}
+
+.package img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.package-content{
+  padding:22px;
+}
+
+.package-content h3{
+  color:#1c7ed6;
+  margin-bottom:10px;
+}
+
+.package-content ul{
+  list-style:none;
+  color:#555;
+  font-size:0.95rem;
+}
+
+.package-content ul li{
+  margin-bottom:8px;
+}
+
+.price{
+  font-size:1.2rem;
+  font-weight:600;
+  margin:15px 0;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 24px;
+  background:#1c7ed6;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+  font-size:0.9rem;
+}
+
+.btn:hover{
+  background:#1864ab;
+}
+
+/* FOOTER */
+footer{
+  background:#1c7ed6;
+  color:#fff;
+  text-align:center;
+  padding:18px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .about{
+    grid-template-columns:1fr;
+  }
+  .hero-content h1{
+    font-size:2.6rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>Singapore</h1>
+    <p>A perfect blend of luxury, futuristic vibes, culture, and world-class experiences.</p>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section>
+  <div class="section-title">
+    <h2>About Singapore</h2>
+    <p>The Lion City – modern, vibrant, and unforgettable.</p>
+  </div>
+
+  <div class="about">
+    <img src="https://images.unsplash.com/photo-1506466010722-395aa2bef877" alt="Singapore City">
+    <p>
+      Singapore is a global city known for its stunning skyline, clean streets, and iconic attractions.
+      From Marina Bay Sands and Gardens by the Bay to Sentosa Island and Orchard Road,
+      Singapore offers luxury shopping, thrilling nightlife, cultural neighborhoods, and amazing food.
+      It’s perfect for honeymooners, families, and first-time international travelers.
+    </p>
+  </div>
+</section>
+
+<!-- TOUR PACKAGES -->
+<section style="background:#eef3fb;">
+  <div class="section-title">
+    <h2>Singapore Tour Packages</h2>
+    <p>Carefully crafted packages for every travel mood.</p>
+  </div>
+
+  <div class="packages">
+
+    <!-- Package 1 -->
+    <div class="package">
+      <img src="Dubai1.jpg" alt="">
+      <div class="package-content">
+        <h3>Singapore Honeymoon</h3>
+        <ul>
+          <li>✔ 4 Nights / 5 Days</li>
+          <li>✔ Marina Bay Sands Visit</li>
+          <li>✔ Sentosa Island Tour</li>
+          <li>✔ Romantic Dinner Cruise</li>
+        </ul>
+        <div class="price">₹79,999 / couple</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Package 2 -->
+    <div class="package">
+      <img src="https://images.unsplash.com/photo-1496939376851-89342e90adcd" alt="">
+      <div class="package-content">
+        <h3>Family Fun Package</h3>
+        <ul>
+          <li>✔ 5 Nights / 6 Days</li>
+          <li>✔ Universal Studios</li>
+          <li>✔ SEA Aquarium</li>
+          <li>✔ City & Zoo Tour</li>
+        </ul>
+        <div class="price">₹59,999 / person</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Package 3 -->
+    <div class="package">
+      <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd" alt="">
+      <div class="package-content">
+        <h3>Luxury City Escape</h3>
+        <ul>
+          <li>✔ 6 Nights / 7 Days</li>
+          <li>✔ 5★ Luxury Hotel</li>
+          <li>✔ Private City Tours</li>
+          <li>✔ Shopping & Night Safari</li>
+        </ul>
+        <div class="price">₹99,999 / person</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Your Travel Agency | Singapore Packages
+</footer>
+
+</body>
+</html>

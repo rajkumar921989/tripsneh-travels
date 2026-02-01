@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Reservation Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background:#f6f7f9;
+    color:#333;
+}
+
+/* Banner */
+.banner{
+    background:url('https://images.unsplash.com/photo-1548013146-72479768bada') center/cover no-repeat;
+    height:260px;
+    position:relative;
+}
+.banner::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+}
+.banner h1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:#fff;
+    font-size:38px;
+    z-index:1;
+}
+
+/* Breadcrumb */
+.breadcrumb{
+    background:#fff;
+    padding:15px 40px;
+    font-size:14px;
+}
+.breadcrumb a{
+    color:#0077b6;
+    text-decoration:none;
+}
+
+/* Layout */
+.container{
+    display:flex;
+    gap:30px;
+    padding:40px;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Sidebar */
+.sidebar{
+    width:260px;
+    background:#fff;
+    padding:20px;
+    border-radius:6px;
+}
+.sidebar ul{
+    list-style:none;
+}
+.sidebar li{
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+}
+.sidebar a{
+    text-decoration:none;
+    color:#444;
+    font-size:14px;
+}
+.sidebar a:hover{
+    color:#0077b6;
+}
+
+/* Content */
+.content{
+    flex:1;
+    background:#fff;
+    padding:30px;
+    border-radius:6px;
+}
+.content h2{
+    margin-bottom:25px;
+    font-size:24px;
+}
+.faq{
+    margin-bottom:25px;
+}
+.faq h4{
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:8px;
+}
+.faq p{
+    font-size:14px;
+    line-height:1.8;
+    color:#555;
+    border-bottom:1px solid #eee;
+    padding-bottom:20px;
+}
+
+/* Responsive */
+@media(max-width:900px){
+    .container{
+        flex-direction:column;
+    }
+    .sidebar{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Banner -->
+<div class="banner">
+    <h1>Reservation Policy</h1>
+</div>
+
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+    <a href="#">Home</a> / Reservation Policy
+</div>
+
+<!-- Main Content -->
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Lowest Rates Challenge</a></li>
+            <li><a href="#">Payment Options</a></li>
+            <li><a href="#">Reservation Policy</a></li>
+            <li><a href="#">Awards</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Testimonials</a></li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq">
+            <h4>How do I confirm a reservation?</h4>
+            <p>
+                We assign a dedicated Travel Counselor to process your reservation. 
+                Once hotels and itinerary are finalized, a proforma invoice is shared. 
+                Upon confirmation, we proceed with the booking.
+            </p>
+        </div>
+
+        <div class="faq">
+            <h4>How much advance do I pay and when?</h4>
+            <p>
+                A 10–25% advance is required to confirm reservations. 
+                Final payment timelines vary based on hotels, destination, and season.
+            </p>
+        </div>
+
+        <div class="faq">
+            <h4>What is a Confirmation Voucher?</h4>
+            <p>
+                After receiving advance payment, a confirmation voucher is emailed 
+                containing all reservation details, which must be shown at check-in.
+            </p>
+        </div>
+
+        <div class="faq">
+            <h4>How do I know if my hotel reservation is confirmed?</h4>
+            <p>
+                The voucher includes confirmation number and hotel contact details. 
+                You may verify directly with the hotel if needed.
+            </p>
+        </div>
+
+        <div class="faq">
+            <h4>Do I need to reconfirm with the hotel?</h4>
+            <p>
+                No, we also send a copy of the confirmation voucher directly to the hotel.
+            </p>
+        </div>
+
+        <div class="faq">
+            <h4>How long does confirmation take?</h4>
+            <p>24 to 48 hours.</p>
+        </div>
+
+        <div class="faq">
+            <h4>Cancellation / Modification Policy</h4>
+            <p>
+                Cancellation or modification is subject to hotel terms and seasonality.
+                A 10% processing fee applies for any changes.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

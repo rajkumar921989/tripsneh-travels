@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Maldives Tour Packages | Luxury Island Escape</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f5f7fa;
+  color:#333;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.6)),
+    url('maldives.jpg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+}
+
+.hero h1{
+  font-size:3.5rem;
+  font-weight:700;
+}
+
+.hero p{
+  max-width:700px;
+  margin:20px auto;
+  font-size:1.1rem;
+}
+
+.btn{
+  padding:14px 30px;
+  background:#cfae70;
+  color:#fff;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:500;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:#b9975b;
+}
+
+/* SECTION */
+.section{
+  padding:80px 10%;
+}
+
+.section h2{
+  text-align:center;
+  font-size:2.5rem;
+  margin-bottom:15px;
+}
+
+.section p{
+  text-align:center;
+  max-width:800px;
+  margin:0 auto 50px;
+  color:#666;
+}
+
+/* FEATURES */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.feature-box{
+  background:#fff;
+  padding:30px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.feature-box h3{
+  margin-bottom:10px;
+}
+
+/* PACKAGES */
+.packages{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.package-card{
+  background:#fff;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 15px 40px rgba(0,0,0,.1);
+  transition:.3s;
+}
+
+.package-card:hover{
+  transform:translateY(-8px);
+}
+
+.package-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.package-content{
+  padding:25px;
+}
+
+.package-content h3{
+  margin-bottom:10px;
+}
+
+.price{
+  color:#cfae70;
+  font-size:1.2rem;
+  font-weight:600;
+  margin:10px 0;
+}
+
+/* CTA */
+.cta{
+  background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  text-align:center;
+  padding:90px 10%;
+}
+
+.cta h2{
+  font-size:2.5rem;
+  margin-bottom:20px;
+}
+
+/* FOOTER */
+footer{
+  background:#111;
+  color:#aaa;
+  text-align:center;
+  padding:25px;
+  font-size:.9rem;
+}
+
+@media(max-width:768px){
+  .hero h1{font-size:2.5rem;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Maldives Island Escape</h1>
+    <p>Turquoise waters, overwater villas, private beaches & unreal sunsets. Welcome to pure luxury.</p>
+    <a href="#packages" class="btn">View Packages</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <h2>About Maldives</h2>
+  <p>
+    The Maldives is a tropical paradise in the Indian Ocean, famous for crystal-clear lagoons,
+    white sandy beaches, coral reefs, and luxury water villas. Perfect for honeymooners,
+    families, and luxury seekers who want peace with style.
+  </p>
+
+  <div class="features">
+    <div class="feature-box">
+      <h3>🌊 Overwater Villas</h3>
+      <p>Wake up to ocean views and jump straight into turquoise waters.</p>
+    </div>
+    <div class="feature-box">
+      <h3>🤿 Marine Life</h3>
+      <p>Snorkeling & scuba diving with colorful corals and exotic fish.</p>
+    </div>
+    <div class="feature-box">
+      <h3>🌅 Romantic Vibes</h3>
+      <p>Private beaches, sunset cruises, and candle-light dinners.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="section" id="packages">
+  <h2>Maldives Tour Packages</h2>
+  <p>Hand-picked experiences designed for every kind of traveler.</p>
+
+  <div class="packages">
+
+    <!-- Honeymoon -->
+    <div class="package-card">
+      <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21" alt="Honeymoon Maldives">
+      <div class="package-content">
+        <h3>💍 Honeymoon Package</h3>
+        <p>4N/5D | Water Villa Stay | Candle-Light Dinner | Sunset Cruise</p>
+        <div class="price">Starting ₹1,25,000 / couple</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Family -->
+    <div class="package-card">
+      <img src="maldives.jpg" alt="Family Maldives">
+      <div class="package-content">
+        <h3>👨‍👩‍👧 Family Package</h3>
+        <p>5N/6D | Beach Resort | Island Hopping | Water Sports</p>
+        <div class="price">Starting ₹95,000 / person</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Luxury -->
+    <div class="package-card">
+      <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" alt="Luxury Maldives">
+      <div class="package-content">
+        <h3>👑 Ultra Luxury Package</h3>
+        <p>6N/7D | Private Island | Infinity Pool Villa | Yacht Transfer</p>
+        <div class="price">Starting ₹2,50,000 / person</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Ready for Your Maldives Dream?</h2>
+  <p>Luxury stays • Custom packages • Hassle-free travel</p><br>
+  <a href="#" class="btn">Contact Us</a>
+</section>
+
+<footer>
+  © 2026 Tripsneh Travels | Luxury Maldives Holidays
+</footer>
+
+</body>
+</html>

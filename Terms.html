@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Terms & Condition | Tours & Travels</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#f5f5f5;
+  color:#333;
+}
+
+/* HERO */
+.hero{
+  height:260px;
+  background:url("https://images.unsplash.com/photo-1506461883276-594a12b11cf3") center/cover no-repeat;
+  position:relative;
+}
+
+.hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.55);
+}
+
+.hero h1{
+  position:absolute;
+  bottom:30px;
+  left:50%;
+  transform:translateX(-50%);
+  color:#fff;
+  font-size:36px;
+  font-weight:600;
+}
+
+/* BREADCRUMB */
+.breadcrumb{
+  background:#eee;
+  padding:12px 10%;
+  font-size:14px;
+}
+
+.breadcrumb a{
+  text-decoration:none;
+  color:#333;
+}
+
+/* PAGE LAYOUT */
+.container{
+  display:flex;
+  gap:30px;
+  padding:40px 10%;
+}
+
+/* SIDEBAR */
+.sidebar{
+  width:260px;
+  background:#fff;
+  border-radius:6px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.sidebar ul{
+  list-style:none;
+}
+
+.sidebar ul li{
+  border-bottom:1px solid #eee;
+}
+
+.sidebar ul li a{
+  display:block;
+  padding:14px 18px;
+  text-decoration:none;
+  color:#333;
+  font-size:14px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a{
+  background:#0b7285;
+  color:#fff;
+}
+
+/* CONTENT */
+.content{
+  flex:1;
+  background:#fff;
+  padding:30px;
+  border-radius:6px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.content h2{
+  margin-bottom:15px;
+  color:#0b7285;
+}
+
+.content h3{
+  margin-top:25px;
+  margin-bottom:10px;
+  font-size:18px;
+}
+
+.content p{
+  font-size:14px;
+  line-height:1.8;
+  margin-bottom:12px;
+  color:#555;
+}
+
+.content ul{
+  margin-left:20px;
+  font-size:14px;
+  color:#555;
+}
+
+.content ul li{
+  margin-bottom:8px;
+}
+
+/* FOOTER */
+footer{
+  margin-top:40px;
+  background:#0b7285;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .container{
+    flex-direction:column;
+  }
+  .sidebar{
+    width:100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Terms & Condition</h1>
+</div>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="#">Home</a> / Terms & Condition
+</div>
+
+<!-- CONTENT AREA -->
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Lowest Rates Challenge</a></li>
+      <li><a href="#">Payment Options</a></li>
+      <li><a href="#">Reservation Policy</a></li>
+      <li><a href="#">Awards</a></li>
+      <li class="active"><a href="#">Terms & Condition</a></li>
+      <li><a href="#">Testimonials</a></li>
+    </ul>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="content">
+    <h2>Terms & Conditions</h2>
+
+    <p>
+      The website owner, including subsidiaries and affiliates, provides the information
+      contained on this website subject to the following terms and conditions.
+      Your use of this website constitutes agreement with these terms.
+    </p>
+
+    <p>
+      The content of this website is for your general information only and is subject
+      to change without notice.
+    </p>
+
+    <h3>Use of Website</h3>
+    <p>
+      Neither we nor any third parties provide any warranty or guarantee as to the accuracy,
+      timeliness, performance, completeness or suitability of the information and materials
+      found on this website.
+    </p>
+
+    <h3>Privacy Policy</h3>
+    <p>
+      We are committed to ensuring that your privacy is protected. Any information
+      provided will only be used in accordance with this privacy statement.
+    </p>
+
+    <h3>Security</h3>
+    <p>
+      We are committed to ensuring that your information is secure. Suitable physical,
+      electronic and managerial procedures are in place to safeguard the information.
+    </p>
+
+    <h3>Cookies</h3>
+    <p>
+      A cookie is a small file which asks permission to be placed on your computer’s
+      hard drive. Cookies help analyze web traffic and improve user experience.
+    </p>
+
+    <h3>Disclaimer</h3>
+    <ul>
+      <li>No warranties</li>
+      <li>Limitation of liability</li>
+      <li>External links disclaimer</li>
+      <li>Errors and omissions</li>
+    </ul>
+
+    <h3>Cancellation & Refund Policy</h3>
+    <p>
+      Cancellation and refund policies depend on hotels, airlines, and service providers.
+      Processing charges may apply as per booking conditions.
+    </p>
+
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Your Travel Company | All Rights Reserved
+</footer>
+
+</body>
+</html>
