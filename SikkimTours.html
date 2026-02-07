@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kerala Tour Packages</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+body{
+  background:#f1f5f9;
+  color:#1f2937;
+}
+a{text-decoration:none}
+
+/* HEADER */
+header{
+  background:#fff;
+  position:sticky;
+  top:0;
+  z-index:10;
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+.nav{
+  max-width:1200px;
+  margin:auto;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  font-size:24px;
+  font-weight:700;
+  color:#f59e0b;
+}
+.menu a{
+  margin-left:22px;
+  font-size:14px;
+  font-weight:500;
+  color:#334155;
+}
+
+/* CONTAINER */
+.container{
+  max-width:1200px;
+  margin:40px auto;
+  padding:0 20px;
+}
+
+/* HERO SECTION */
+.top{
+  display:grid;
+  grid-template-columns:2.2fr 1fr;
+  gap:30px;
+}
+.hero{
+  background:#fff;
+  padding:25px;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+.hero img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  border-radius:14px;
+}
+.hero p{
+  margin-top:18px;
+  font-size:14px;
+  line-height:1.8;
+  color:#475569;
+}
+
+/* ENQUIRY BOX */
+.enquiry{
+  background:#fff;
+  padding:25px;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+.enquiry h3{
+  font-size:18px;
+  margin-bottom:18px;
+}
+.enquiry input,
+.enquiry textarea{
+  width:100%;
+  padding:11px 12px;
+  margin-bottom:12px;
+  border:1px solid #e5e7eb;
+  border-radius:8px;
+  font-size:13px;
+}
+.enquiry button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(135deg,#f59e0b,#f97316);
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* SECTION TITLE */
+.section-title{
+  font-size:24px;
+  font-weight:700;
+  margin:50px 0 25px;
+}
+
+/* PACKAGES */
+.packages{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.card{
+  background:#fff;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 18px 40px rgba(0,0,0,.08);
+  transition:.35s ease;
+  border:2px solid #f97316;
+}
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 25px 60px rgba(0,0,0,.12);
+}
+
+.card img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+}
+
+.card-body{
+  padding:24px 22px 26px;
+}
+
+
+.card-body h4{
+  font-size:16px;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.meta{
+  font-size:13px;
+  color:#64748b;
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:12px;
+}
+
+.includes{
+  display:flex;
+  gap:14px;
+  font-size:13px;
+  color:#334155;
+  margin-bottom:14px;
+}
+
+.price{
+  font-size:15px;
+  font-weight:700;
+  margin:12px 0 18px;
+  color:#0f172a;
+}
+
+/* buttons */
+.btns{
+  display:flex;
+  gap:12px;
+}
+
+.btns a{
+  flex:1;
+  text-align:center;
+  padding:10px 0;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.book{
+  background:linear-gradient(135deg,#f59e0b,#f97316);
+  color:#fff;
+}
+
+.explore{
+  border:2px solid #f97316;
+  color:#f97316;
+  background:#fff;
+}
+
+.book:hover{
+  opacity:.9;
+}
+.explore:hover{
+  background:#f97316;
+  color:#fff;
+}
+
+
+
+
+/* INFO */
+.info{
+  background:#fff;
+  padding:30px;
+  border-radius:16px;
+  margin-top:40px;
+  box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+.info h3{
+  margin-bottom:10px;
+}
+
+/* FAQ */
+details{
+  background:#fff;
+  padding:18px;
+  border-radius:12px;
+  margin-bottom:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+summary{
+  cursor:pointer;
+  font-weight:600;
+}
+
+/* FOOTER */
+footer{
+  background:#0f172a;
+  color:#cbd5f5;
+  margin-top:60px;
+}
+.footer{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:25px;
+}
+.footer h4{
+  color:#fff;
+  margin-bottom:12px;
+}
+.footer p{
+  font-size:13px;
+  line-height:1.7;
+}
+.copy{
+  text-align:center;
+  padding:15px;
+  background:#020617;
+  font-size:12px;
+}
+
+@media(max-width:900px){
+  .packages{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:600px){
+  .packages{
+    grid-template-columns:1fr;
+  }
+
+  .top{
+    grid-template-columns:1fr;
+  }
+}
+.field-group{
+  margin-bottom:14px;
+}
+
+.field-group label{
+  font-size:13px;
+  font-weight:500;
+  margin-bottom:6px;
+  display:block;
+  color:#1f2937;
+}
+
+.name-row{
+  display:flex;
+  gap:10px;
+}
+
+.name-row select{
+  width:30%;
+  padding:10px 12px;
+  border:1px solid #d1d5db;
+  border-radius:6px;
+  font-size:13px;
+  background:#fff;
+}
+
+.name-row input{
+  width:70%;
+  padding:10px 12px;
+  border:1px solid #d1d5db;
+  border-radius:6px;
+  font-size:13px;
+}
+
+.field-group input{
+  width:100%;
+  padding:10px 12px;
+  border:1px solid #d1d5db;
+  border-radius:6px;
+  font-size:13px;
+}
+
+
+.inline-form{
+  display:none;
+  margin-top:18px;
+  padding:18px;
+  border-radius:14px;
+  background:#f8fafc;
+  border:1px solid #e5e7eb;
+  animation:fadeIn .3s ease;
+}
+
+.inline-form input,
+.inline-form textarea{
+  width:100%;
+  padding:10px 12px;
+  margin-bottom:10px;
+  border:1px solid #e5e7eb;
+  border-radius:8px;
+  font-size:13px;
+}
+
+.inline-form button{
+  width:100%;
+  padding:11px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(135deg,#f59e0b,#f97316);
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(8px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+
+/* MODAL BACKDROP */
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.55);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+/* MODAL BOX */
+.modal-box{
+  background:#fff;
+  width:420px;
+  max-height:90vh;          /* 🔥 key line */
+  border-radius:14px;
+  padding:22px 20px;
+  overflow-y:auto;          /* 🔥 scroll inside modal */
+  position:relative;
+  box-shadow:0 15px 40px rgba(0,0,0,.3);
+}
+
+/* CLOSE BUTTON */
+.modal .close{
+  position:absolute;
+  top:12px;
+  right:14px;
+  font-size:24px;
+  cursor:pointer;
+}
+
+/* FORM UI */
+.enquiry-form-ui h3{
+  text-align:center;
+  margin-bottom:15px;
+}
+
+.field-group{
+  margin-bottom:14px;
+}
+
+.field-group label{
+  font-size:13px;
+  font-weight:500;
+  margin-bottom:6px;
+  display:block;
+}
+
+.enquiry-form-ui input,
+.enquiry-form-ui select,
+.enquiry-form-ui textarea{
+  width:100%;
+  padding:9px 10px;
+  border:1px solid #d1d5db;
+  border-radius:6px;
+  font-size:13px;
+}
+
+.name-row{
+  display:flex;
+  gap:10px;
+}
+
+.two-col{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.modal-btn{
+  width:100%;
+  margin-top:10px;
+  background:#f97316;
+  color:#fff;
+  border:none;
+  padding:12px;
+  border-radius:30px;
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+@keyframes pop{
+  from{transform:scale(.9);opacity:0}
+  to{transform:scale(1);opacity:1}
+}
+
+.enquiry-form-ui label{
+  font-size:13px;
+  font-weight:500;
+  margin-bottom:4px;
+  display:block;
+}
+
+.enquiry-form-ui input,
+.enquiry-form-ui select,
+.enquiry-form-ui textarea{
+  width:100%;
+  padding:10px 12px;
+  border:1px solid #d1d5db;
+  border-radius:6px;
+  font-size:13px;
+  margin-bottom:12px;
+}
+
+.two-col{
+  display:flex;
+  gap:12px;
+}
+
+.two-col > div{
+  flex:1;
+}
+
+.consent{
+  display:flex;
+  gap:8px;
+  font-size:11px;
+  line-height:1.5;
+  color:#374151;
+  margin-bottom:12px;
+}
+
+.consent input{
+  margin-top:3px;
+}
+
+@media(max-width:480px){
+  .two-col{
+    flex-direction:column;
+  }
+}
+
+</style>
+</head>
+
+
+<!-- ENQUIRY MODAL -->
+<div id="enquiryModal" class="modal">
+  <div class="modal-box enquiry-form-ui">
+  <span class="close" onclick="closeModal()">&times;</span>
+
+  <h3 id="packageTitle">Send Query</h3>
+
+  <form>
+    <div class="field-group">
+  <label>Name</label>
+  <div class="name-row">
+    <select>
+      <option>- Select -</option>
+      <option>Mr</option>
+      <option>Mrs</option>
+      <option>Miss</option>
+    </select>
+    <input type="text" placeholder="Enter Name">
+  </div>
+</div>
+
+<div class="field-group">
+  <label>Mobile</label>
+  <input type="tel" placeholder="Enter Mobile">
+</div>
+
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter Email" required>
+
+    <div class="two-col">
+      <div>
+        <label>Check In Date</label>
+        <input type="date" required>
+      </div>
+      <div>
+        <label>Check Out Date</label>
+        <input type="date" required>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <label>No of Adult</label>
+        <select required>
+          <option>- Select -</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4+</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Children</label>
+        <select>
+          <option>Children (5 - 12 Yrs)</option>
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+        </select>
+      </div>
+    </div>
+
+    <label>Category of Hotels Needed</label>
+    <select required>
+      <option>- Select -</option>
+      <option>Budget</option>
+      <option>Deluxe</option>
+      <option>Luxury</option>
+    </select>
+
+    <label>Message</label>
+    <textarea rows="3" placeholder="Message"></textarea>
+
+
+    <button type="submit" class="modal-btn">Send</button>
+
+  </form>
+</div>
+
+</div>
+
+<body>
+
+
+<div class="container">
+
+<div class="top">
+  <div class="hero">
+    <img src="Sikkimfront.jpg">
+    <p>
+ Sikkim is a small but insanely beautiful state in Northeast India, known for its snow-capped mountains, peaceful monasteries, alpine lakes, and raw Himalayan views. Tucked between India, Nepal, and Bhutan, Sikkim feels calm, fresh, and totally different from the usual tourist chaos.
+
+Home to the majestic Kanchenjunga, the world’s third-highest peak, Sikkim is perfect for travelers who love nature, adventure, and culture. From colorful prayer flags in Gangtok, to the crystal-clear waters of Tsomgo Lake, and serene monasteries like Rumtek, every corner of Sikkim hits with quiet magic.
+
+The state is also famous for its clean cities, warm locals, Buddhist heritage, and organic lifestyle. Whether you’re planning a honeymoon, a family trip, or a mountain escape, Sikkim tour packages offer a peaceful yet adventurous experience all year round.
+    </p>
+  </div>
+
+  <div class="enquiry">
+    <h3>Sikkim Trip Enquiry</h3>
+    <input placeholder="Your Name">
+    <input placeholder="WhatsApp Number">
+    <input placeholder="Email">
+    <input type="date">
+    <input placeholder="Total Persons">
+    <textarea rows="3" placeholder="City / Message"></textarea>
+    <button>Submit Enquiry</button>
+  </div>
+</div>
+ 
+<h2 class="section-title">Best Selling Sikkim Tour Packages</h2>
+
+<div class="packages">
+
+  <div class="card">
+    <img src="gangtok.jpg">
+    <div class="card-body">
+      <h4>Only Gangtok Package</h4>
+      <div class="meta"><span>📍 Gangtok</span><span>⏱ 3N/4D</span></div>
+      <div class="includes">🏨 Staynnar 🍽 Meal 🚌 Transport</div>
+      <div class="price">₹7,499 / Per Person</div>
+      <div class="btns">
+       <a class="book" onclick="openModal('Only Gangtok Package ')">Book Now</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="kerla2.jpg">
+    <div class="card-body">
+      <h4>only Namchi package </h4>
+      <div class="meta"><span>📍 Srinagar</span><span>⏱ 4N/5D</span></div>
+      <div class="includes">🏨 Stay 🍽 Meal 🚌 Transport</div>
+      <div class="price">₹8,999 / Per Person</div>
+      <div class="btns">
+       <a class="book" onclick="openModal('only Namchi package')">Book Now</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="lachung.jpg">
+    <div class="card-body">
+      <h4>Lachung Package tour Package</h4>
+      <div class="meta"><span>📍 Mumbai</span><span>⏱ 4N/5D</span></div>
+      <div class="includes">🏨 Stay 🍽 Meal 🚌 Transport</div>
+      <div class="price">₹14,499 / Per Person</div>
+      <div class="btns">
+        <a class="book" onclick="openModal('Lachungy Package from Mumbai')">Book Now</a>
+    
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="Uttarkhand4.jpg">
+    <div class="card-body">
+      <h4>Lachen Tour Package</h4>
+      <div class="meta"><span>📍 Srinagar</span><span>⏱ 4N/5D</span></div>
+      <div class="includes">🏨 Stay 🍽 Meal 🚌 Transport</div>
+      <div class="price">₹18,999 /Per Person</div>
+      <div class="btns">
+        <a class="book" onclick="openModal('Lachen Tour Package')">Book Now</a>a>
+     
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="Uttarkhand5.jpg">
+    <div class="card-body">
+      <h4>Tsomgo (Changu) Lake Tour Package</h4>
+      <div class="meta"><span>📍 Srinagar</span><span>⏱ 4N/5D</span></div>
+      <div class="includes">🏨 Stay 🍽 Meal 🚌 Transport</div>
+      <div class="price">₹22,999 /Per Person</div>
+      <div class="btns">
+        <a class="book" onclick="openModal('Alleppey (Alappuzha) Tour Package')">Book Now</a>
+       
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="Uttarkhand6.jpg">
+    <div class="card-body">
+      <h4> Menmecho Lake Tour Package </h4>
+      <div class="meta"><span>📍 Mumbai</span><span>⏱ 4N/5D</span></div>
+      <div class="includes">🏨 Stay 🍽 Meal 🚌 Transport</div>
+      <div class="price">₹23,800 / Person</div>
+      <div class="btns">
+        <a class="book" onclick="openModal(' Kollam tour Package ')">Book Now</a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="Uttarkhand7.jpg">
+    <div class="card-body">
+      <h4>Kumarakom tour package from Dhelhi</h4>
+      <div class="meta"><span>📍 Mumbai</span><span>⏱ 4N/5D</span></div>
+      <div class="includes">🏨 Stay 🍽 Meal 🚌 Transport</div>
+      <div class="price">₹23,800 / Person</div>
+      <div class="btns">
+        <a class="book" onclick="openModal('Kumarakom tour package from Dhelhi')">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="Uttarkhand8.jpg">
+    <div class="card-body">
+      <h4>Periyar National Park Package from Bangaloure</h4>
+      <div class="meta"><span>📍 Mumbai</span><span>⏱ 4N/5D</span></div>
+      <div class="includes">🏨 Stay 🍽 Meal 🚌 Transport</div>
+      <div class="price">₹23,800 / Person</div>
+      <div class="btns">
+        <a class="book" onclick="openModal('Periyar National Park package from Mumbai')">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="Uttarkhand9.jpg">
+    <div class="card-body">
+      <h4>Thrissur Package from Pune</h4>
+      <div class="meta"><span>📍 Mumbai</span><span>⏱ 4N/5D</span></div>
+      <div class="includes">🏨 Stay 🍽 Meal 🚌 Transport</div>
+      <div class="price">₹23,800 / Person</div>
+      <div class="btns">
+        <a class="book" onclick="openModal('Hemkund Sahib,Pithoragarh package from Pune')">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="Uttarkhand10.jpg">
+    <div class="card-body">
+      <h4>Trivandrum (Thiruvananthapuram) Package from Kolkata</h4>
+      <div class="meta"><span>📍 Mumbai</span><span>⏱ 4N/5D</span></div>
+      <div class="includes">🏨 Stay 🍽 Meal 🚌 Transport</div>
+      <div class="price">₹23,800 / Person</div>
+      <div class="btns">
+        <a class="book" onclick="openModal('Sonmarg,Pahalgam package from Kolkata')">Book Now</a>>
+
+      </div>
+    </div>
+  </div>
+  
+
+</div>
+
+</div>
+
+<footer>
+<div class="footer">
+  <div>
+    <h4>Tripsneh Travels</h4>
+    <p>Your trusted partner for divine journeys.</p>
+  </div>
+  <div>
+    <h4>Popular Tours</h4>
+    <p>Pahalgam<br>Yusmarg<br>Srinagar</p>
+  </div>
+  <div>
+    <h4>Contact</h4>
+    <p>sales@tripsneh.com<br>+91 7303296390 </p>
+  </div>
+</div>
+<div class="copy">© 2026 Tripsneh Travels. All Rights Reserved.</div>
+</footer>
+
+</body>
+
+</html>
+<script>
+function openModal(packageName){
+  document.getElementById("enquiryModal").style.display = "flex";
+  document.getElementById("packageTitle").innerText = packageName;
+}
+
+function closeModal(){
+  document.getElementById("enquiryModal").style.display = "none";
+}
+
+// close on outside click
+window.onclick = function(e){
+  const modal = document.getElementById("enquiryModal");
+  if(e.target === modal){
+    closeModal();
+  }
+}
+</script>
