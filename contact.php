@@ -1,9 +1,13 @@
 <?php
+// Show errors (for debugging)
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 // Database connection
 $servername = "localhost";
-$username = "root";      // default XAMPP username
-$password = "";          // default XAMPP password
-$dbname = "tripsnehcontactus"; // your database name
+$username   = "root";
+$password   = "";
+$dbname     = "tripsneh_db";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -12,29 +16,48 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+// Set timezone for correct timestamp
+date_default_timezone_set("Asia/Kolkata");
+
 // Check form submission
-if (isset($_POST['send'])){
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phonenumber = $_POST['phonenumber'];
-    $prefereddestination = $_POST['prefereddestination'];
-    $comments = $_POST['comments'];
+    $name    = $_POST['name'];
+    $email   = $_POST['email'];
+    $mobile  = $_POST['mobile'];
+    $message = $_POST['message'];
 
-    $sql = "INSERT INTO contact_messages 
-            (name, email, phonenumber, prefereddestination, comments)
+    $created_at = date("Y-m-d H:i:s");
+
+    $sql = "INSERT INTO customer_query 
+            (name, email, mobile, message, created_at) 
             VALUES (?, ?, ?, ?, ?)";
 
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sssss", $name, $email, $phonenumber, $prefereddestination, $comments);
 
-    if ($stmt->execute()) {
-        echo "<script>alert('Message sent successfully!'); window.location.href='contactus.html';</script>";
+    if ($stmt) {
+
+        $stmt->bind_param("sssss", 
+            $name, 
+            $email, 
+            $mobile, 
+            $message, 
+            $created_at
+        );
+
+        if ($stmt->execute()) {
+            echo "<script>
+                    alert('Message sent successfully 🚀');
+                    window.location.href='contactus.html';
+                  </script>";
+        } else {
+            echo "Execute Error: " . $stmt->error;
+        }
+
+        $stmt->close();
     } else {
-        echo "Error: " . $stmt->error;
+        echo "Prepare Error: " . $conn->error;
     }
-
-    $stmt->close();
 }
 
 $conn->close();
