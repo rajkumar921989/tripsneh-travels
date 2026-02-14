@@ -143,15 +143,21 @@
 
     <h2>Send Enquiry</h2>
 
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Email Address" required>
-    <input type="tel" placeholder="Mobile Number" required>
+    <form action="contact.php" method="POST" onsubmit="return validateForm()">
 
-    <textarea placeholder="Your Message"></textarea>
+      <input type="text" name="name" id="name" placeholder="Your Name" required>
 
-    <button type="submit">Submit</button>
+      <input type="email" name="email" id="email" placeholder="Email Address" required>
+
+      <input type="tel" name="mobile" id="mobile" placeholder="Mobile Number" required>
+
+      <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Submit</button>
+
+    </form>
   </div>
-</div>  
+</div> 
   <script src="script.js"></script>
   <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/917303296390" 
