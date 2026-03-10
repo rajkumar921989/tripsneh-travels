@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Tour Reviews</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tour Reviews</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -13,6 +13,42 @@
   padding:0;
   box-sizing:border-box;
   font-family:'Poppins',sans-serif;
+}
+.container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.box{
+  width:30%;
+  margin:10px;
+}
+/* Tablet */
+@media (max-width: 900px){
+  .box{
+    width:45%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+  .box{
+    width:100%;
+  }
+}
+img{
+  max-width:100%;
+  height:auto;
+}
+@media (max-width:768px){
+  nav ul{
+    flex-direction:column;
+  }
+}
+@media (max-width:768px){
+  nav ul{
+    flex-direction:column;
+  }
 }
 body{
   background:#f6f7f9;
@@ -70,7 +106,8 @@ body{
 
 /* Layout */
 .container{
-  max-width:1200px;
+  width:90%;
+max-width:1200px;
   margin:40px auto;
   display:grid;
   grid-template-columns: 2.5fr 1fr;
